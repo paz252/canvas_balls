@@ -24,15 +24,15 @@ addEventListener('resize', () => {
     init();
 })
 
-//addEventListener('touchmove',(e)=>{
-  //  mouse.x = e.screenX;
-    //mouse.y = e.screenY;
-//})
+addEventListener('touchmove',(e)=>{
+    mouse.x = e.touches[0].clientX;
+    mouse.y = e.touches[0].clientY;
+})
 
-//addEventListener('touchstart',(e)=>{
-  //  mouse.x = e.screenX;
-    //mouse.y = e.screenY;
-//})
+addEventListener('touchstart',(e)=>{
+    mouse.x = e.touches[0].clientX;
+    mouse.y = e.touches[0].clientY;
+})
 
 function Circle(x, y, dx, dy, radius, color) {
     this.x = x;
